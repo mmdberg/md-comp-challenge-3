@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  margin: auto;
+}
+
+body {
+  
+}
+
+.checkmark {
+  height: 1em;
+  width: auto;
+}
