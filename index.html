@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Images/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>The Office</title>
   </head>
-  <body>
+  <body class="container">
     <menu>
+      <img class="profile-picture" src="Images/blue-checked-button.svg" alt="profile picture">
+      <p>Blue Checkmark <img class="icon-small" src="Images/down-carrot.svg" alt="down arrow"></p>
       <p>main</p>
       <ul>
-        <li>Home</li>
-        <li>Jobs</li>
+        <li><i class="fas fa-home"></i>Home</li>
+        <li><i class="fas fa-briefcase"></i>Jobs</li>
         <li>Resumes</li>
         <li>Tasks</li>
         <li>Calendar</li>
@@ -26,12 +30,51 @@
       </ul>
       <p>Categories</p>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><img class="checkmark" src="Images/yellow-checked-button.svg" alt="yellow checkmark"></li>
+        <li><img class="checkmark" src="Images/blue-checked-button.svg" alt="blue checkmark"></li>
+        <li><img class="checkmark" src="Images/red-checked-button.svg" alt="red checkmark"></li>
+        <li><img class="checkmark" src="Images/green-checked-button.svg" alt="green"></li>
       </ul>
     </menu>
-    
+    <nav class="search-bar">
+        <img class="search-bar-icon" src="Images/list-button.svg" alt="list icon">
+        <input class="search-input" type="text" placeholder="Search for a job or resume">
+        <img class="search-bar-icon profile" src="Images/add-user.svg" alt="Profile icon">
+        <img class="search-bar-icon" src="Images/calendar.svg" alt="Calendar icon">
+        <img class="search-bar-icon" src="Images/grid.svg" alt="Grid icon">
+    </nav>
+    <header class="title-bar">
+      <div class="title-box">
+      <p class="job-title">Customer Service Representative</p>
+      <p class="location"><img class="icon-small" src="Images/you-are-here.svg" alt="here icon"> location - <span class="preview-post">preview this post</span></p>
+      </div>
+      <div class="button-box">
+      <p  class="inline-block header-button"><img class="icon-small" src="Images/green-circle.svg" alt="Green circle"> OPEN</p>
+      <p class="inline-block header-circle" ><img class=" icon-small" src="Images/flag.svg" alt="flag"></p>
+      <p class="inline-block header-circle" ><img class="icon-small" src="Images/pen.svg" alt="pen"></p>
+      <p class="inline-block header-circle " ><img class="icon-small" src="Images/trash.svg" alt="trash"></p>
+      </div>
+    </header>
+    <section class="profile-menu">
+      <ul class="tabs">
+        <li class="tab summary">Summary</li>
+        <li class="tab">Applicants</li>
+        <li class="tab">Job Board</li>
+        <li class="tab">Interviews</li>
+        <li class="tab">Activity</li>
+        <li class="tab">Broadcast</li>
+        <li class="tab">Notifications</li>
+      </ul>
+    </section>
+    <section class="graphics">
+      <img class="circle-graph" src="Images/green-circle.svg" alt="">
+      <img class="circle-graph" src="Images/green-circle.svg" alt="">
+      <img class="circle-graph" src="Images/green-circle.svg" alt="">
+    </section>
+    <section class="job-information">
+      <article class="job-description"></article>
+      
+    </section>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   </body>
 </html>
