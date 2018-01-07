@@ -7,9 +7,22 @@
 .container {
   display: grid;
   grid-template-columns: 15% 85%;
-  grid-template-rows: 50px 150px 30px 260px 800px auto;
+  grid-template-rows: 50px 150px 30px 260px auto;
 /*  grid-gap: 1em;*/
 
+}
+
+.main {
+  padding-top: 10px;
+}
+
+ul li {
+  padding: 10px;
+  font-size: .7em;
+}
+
+li:hover {
+  color:white;
 }
 
 menu {
@@ -22,14 +35,22 @@ menu {
   color: grey;
   height: 100%;
   width: 100%;
-  justify-self: start;
+/*  justify-self: start;*/
   padding: 0;
+  padding-left: 5px;
+}
+
+.profile {
+  text-align:center;
+  border-bottom: 1px solid black;
+/*  padding-left: 0;*/
+  padding: 30px 0;
 }
 
 .profile-picture {
   border-radius: 50%;
-  width: 50px;
-  height: auto;
+  width: 60px;
+  height: 60px;
 }
 
 .icon-small {
@@ -62,10 +83,11 @@ li {
 }
 
 .search-bar-icon {
+  color: grey;
   height: 50px;
   width: auto;
   padding: 15px;
-  padding-left: 16px;
+  padding-left: 18px;
   margin: 0;
   border-right: .2px solid #ABABAB;
   vertical-align: middle;
@@ -75,7 +97,12 @@ li {
   background-color: #45A4EF;
 }
 
-.profile {
+.search-bar-icon:hover {
+  background-color: #45A4EF;
+  color: white;
+}
+
+.search-user {
   border-left: .2px solid #ABABAB;
   padding-left: 17px;
 }
@@ -124,13 +151,15 @@ li {
 .preview-post {
   color: #84C2ED;
 }
+
 .button-box {
   margin-right: 10px;
 }
+
 .header-button {
   /*background-color: white;*/
   border: 1px solid #919091;
-  border-radius: 39%;
+  border-radius: 25px;
   padding: 10px;
   display: inline-block;
   margin-right: 12px;
@@ -152,6 +181,10 @@ li {
 /*  justify-self: start;*/
   color: #BBBEC3;
     border-bottom: 1px solid #ABABAB;
+}
+
+.tabs {
+  padding: 0;
 }
 
 .tab {
@@ -182,22 +215,144 @@ li {
   width: auto;
 }
 
+.circle {
+  border-radius: 50%;
+  border: 20px solid #DCE4EA;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  display: inline-block;
+  padding-top: 37px;
+  margin: 30px 1%;
+}
+
+.first {
+  border-left-color: blue;
+}
+
+.second {
+  border-left-color: yellow;
+  border-bottom-color: yellow;
+}
+
+.third {
+  border-left-color: red; 
+}
+
+.UVA-graph {
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  vertical-align: middle;
+  margin: 10px;
+  margin-left: 40px;
+}
+
 .job-information {
   background-color: #EEF1F6;
   display: grid;
   grid-template-columns: 70% 30%;
-  grid-column-gap: 40px;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+/*  grid-column-gap: 40px;*/
+ /* grid-template-rows: 1fr 1fr 1fr 1fr;*/
   width: 100%;
   height: 100%;
 }
 
 .job-description {
   border: 1px dashed black;
-  background-color: yellow;
+  background-color: white;
   grid-row: 1 / 5;
   margin: 20px;
   display: grid;
-  grid-template-rows: 40px 40px 40px 40px 40px 40px auto 40px 40px;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 55px 55px 55px 55px 55px 55px auto 55px 55px;
+  justify-content: start;
+/*  width: 100%;
+  height: 100%;*/
+
+  color: #7F8BA4;
+  font-size: .8em;
+  }
+
+.edit-box {
+  background-color: #717E93;
+/*  padding: 5px;
+  margin: 2px;*/
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.edit-color {
+  background-color: #7F8BA4;
+  padding: 9px;
+  margin-top: 12px;
+  width: 66px;
+  height: 60%;
+  display: inline-block;
+}
+
+.article-title {
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 0 10px;
+  font-weight: bold;
+  background-color: #717E93;
+}
+
+.article-key {
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding-top: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+}
+
+.article-body {
+  width: 97%;
+  height: 100%;
+  background-color: white;
+  padding: 20px 0;
+  border-bottom: 1px solid grey;
+  margin-right: 10px;
+}
+
+.president-image {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.aside {
+  grid-row-start: 1 ;
+  grid-row-end: 5;
+  display: grid;
+/*  grid-column-gap: 40px;*/
+/*  grid-template-rows: 40px 40px 40px 40px;*/
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+/*  grid-row-gap: 10px;*/
+/*  height: 100%;*/
+  margin: 20px;
+
+}
+
+.aside-box {
+  width: 100%;
+  height: 100%;
+  background-color: brown;
+}
+
+@media screen and (max-width: 810px) {
+ 
+  menu {
+    background-color: yellow;
+  }
+
 }
 

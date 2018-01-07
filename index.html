@@ -6,47 +6,51 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Images/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <title>The Office</title>
+<!--     <link rel="stylesheet" href="Images/fontawesome.css"> -->
+    <title>Go Hoos</title>
   </head>
   <body class="container">
     <menu>
-      <img class="profile-picture" src="Images/blue-checked-button.svg" alt="profile picture">
-      <p>Blue Checkmark <img class="icon-small" src="Images/down-carrot.svg" alt="down arrow"></p>
-      <p>main</p>
+      <div class="profile">
+        <img class="profile-picture" src="Images/UVA_Rotunda.jpg" alt="profile picture">
+        <p>University of Virginia <img class="icon-small" src="Images/down-carrot.svg" alt="down arrow"></p>
+      </div>
+      <p class="main">Main</p>
       <ul>
-        <li><i class="fas fa-home"></i>Home</li>
-        <li><i class="fas fa-briefcase"></i>Jobs</li>
-        <li>Resumes</li>
-        <li>Tasks</li>
-        <li>Calendar</li>
+        <li><i class="fas fa-home"></i>  Home</li>
+        <li><i class="fas fa-briefcase"></i>  Jobs</li>
+        <li><i class="fas fa-address-book"></i>  Resumes</li>
+        <li><i class="fas fa-thumbtack"></i>  Tasks</li>
+        <li><i class="fas fa-calendar-alt"></i>  Calendar</li>
       </ul>
       <p>Admin</p>
       <ul>
-        <li>Users</li>
-        <li>Locations</li>
-        <li>Workflows</li>
-        <li>Job Boards</li>
-        <li>Social</li>
+        <li><i class="fas fa-users"></i>  Users</li>
+        <li><i class="fas fa-map-marker-alt"></i>  Locations</li>
+        <li><i class="fas fa-code-branch"></i>  Workflows</li>
+        <li><i class="fas fa-book"></i>  Job Boards</li>
+        <li><i class="fas fa-retweet"></i>  Social</li>
       </ul>
       <p>Categories</p>
       <ul>
-        <li><img class="checkmark" src="Images/yellow-checked-button.svg" alt="yellow checkmark"></li>
-        <li><img class="checkmark" src="Images/blue-checked-button.svg" alt="blue checkmark"></li>
-        <li><img class="checkmark" src="Images/red-checked-button.svg" alt="red checkmark"></li>
-        <li><img class="checkmark" src="Images/green-checked-button.svg" alt="green"></li>
+        <li><img class="checkmark" src="Images/yellow-checked-button.svg" alt="yellow checkmark">Administrative</li>
+        <li><img class="checkmark" src="Images/blue-checked-button.svg" alt="blue checkmark">Design</li>
+        <li><img class="checkmark" src="Images/red-checked-button.svg" alt="red checkmark">Executive</li>
+        <li><img class="checkmark" src="Images/green-checked-button.svg" alt="green">Human Resources</li>
       </ul>
     </menu>
     <nav class="search-bar">
-        <img class="search-bar-icon" src="Images/list-button.svg" alt="list icon">
+        <p class="search-bar-icon"><i class="fas fa-bars"></i></p>
+<!--         <img class="search-bar-icon" src="Images/list-button.svg" alt="list icon"> -->
         <input class="search-input" type="text" placeholder="Search for a job or resume">
-        <img class="search-bar-icon profile" src="Images/add-user.svg" alt="Profile icon">
-        <img class="search-bar-icon" src="Images/calendar.svg" alt="Calendar icon">
-        <img class="search-bar-icon" src="Images/grid.svg" alt="Grid icon">
+        <p class="search-bar-icon search-user" ><i class="fas fa-user-plus"></i></p>
+        <p class="search-bar-icon" ><i class="fas fa-calendar-alt"></i></p>
+        <p class="search-bar-icon" ><i class="fas fa-th"></i></p>
     </nav>
     <header class="title-bar">
       <div class="title-box">
-      <p class="job-title">Customer Service Representative</p>
-      <p class="location"><img class="icon-small" src="Images/you-are-here.svg" alt="here icon"> location - <span class="preview-post">preview this post</span></p>
+      <p class="job-title">University of Virginia</p>
+      <p class="location"><img class="icon-small" src="Images/you-are-here.svg" alt="here icon"> Charlottesville, VA - <span class="preview-post">preview this post</span></p>
       </div>
       <div class="button-box">
       <p  class="inline-block header-button"><img class="icon-small" src="Images/green-circle.svg" alt="Green circle"> OPEN</p>
@@ -56,7 +60,7 @@
       </div>
     </header>
     <section class="profile-menu">
-      <ul class="tabs">
+      <ol class="tabs">
         <li class="tab summary">Summary</li>
         <li class="tab">Applicants</li>
         <li class="tab">Job Board</li>
@@ -64,16 +68,71 @@
         <li class="tab">Activity</li>
         <li class="tab">Broadcast</li>
         <li class="tab">Notifications</li>
-      </ul>
+      </ol>
     </section>
     <section class="graphics">
-      <img class="circle-graph" src="Images/green-circle.svg" alt="">
-      <img class="circle-graph" src="Images/green-circle.svg" alt="">
-      <img class="circle-graph" src="Images/green-circle.svg" alt="">
+<div class="first circle">
+  <p>2,100</p>
+  <p>Applicants</p>
+</div>
+<div class="second circle">
+  <p>2,000</p>
+  <p>Interviews</p>
+</div>
+<div class="third circle">
+  <p>3,333</p>
+  <p>Forwards</p>
+</div>
+      <img class="UVA-graph" src="Images/UVA-graph.png" alt="graph of GPA vs ACT/SAT score">
     </section>
     <section class="job-information">
-      <article class="job-description"></article>
-      
+      <article class="job-description">
+        <p class="article-title ">job description</p>
+        <p class="edit-box"><span class="edit-color"><i class="fas fa-pencil-alt"></i> EDIT</span>
+        </p>
+        <p class="article-key">Position title</p>
+        <p class="article-body">Customer Service Representative
+        </p>
+        <p class="article-key">location</p>
+        <p class="article-body">
+        Charlottesville, VA</p>
+        <p class="article-key">Employment Type</p>
+        <p class="article-body">Full-time
+        </p>
+        <p class="article-key">Experience</p>
+        <p class="article-body">Mid-level
+        </p>
+        <p class="article-key">Status</p>
+        <p class="article-body">Open
+        </p>
+        <p class="article-key">Description</p>
+        <p class="article-body">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulloo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.
+        </p>
+        <p class="article-key">President</p>
+        <p class="article-body"><img class="president-image" src="Images/T-Sull.jpeg" alt="Picture of President Sullivan">Theresa Sullivan
+        </p>
+        <p class="article-key">Approved Salary</p>
+        <p class="article-body">$50,000
+        </p>
+      </article>
+      <aside class="aside">
+        <section class="aside-box">
+          <h3>Social Media</h3>
+        </section>
+        <section class="aside-box">
+          <h3><i class="fas fa-globe"></i>Link to this Job</h3>
+          <p>zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro.</p>
+        </section>
+        <section class="aside-box">
+          <h3><i class="fas fa-tv"></i>Use the Button Widget</h3>
+          <p>zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro.</p>
+        </section>
+        <section class="aside-box">
+          <h3><i class="fas fa-upload"></i>Upload Resumes by Email</h3>
+          <p>zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro.
+          </p>
+        </section>
+      </aside>
     </section>
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   </body>
