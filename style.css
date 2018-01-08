@@ -7,7 +7,7 @@
 .container {
   display: grid;
   grid-template-columns: 15% 85%;
-  grid-template-rows: 50px 150px 30px 260px auto;
+  grid-template-rows: 50px 150px 30px 290px auto;
 /*  grid-gap: 1em;*/
 
 }
@@ -15,7 +15,6 @@
 .main {
   padding-top: 10px;
 }
-
 ul li {
   padding: 10px;
   font-size: .7em;
@@ -208,44 +207,74 @@ li {
   background-color: #EEF1F6;
   width: 100%;
   height: 100%;
+/*  padding-left: 3%;*/
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 200px auto;
+  justify-items: center;
 }
 
-.circle-graph {
+/*.circle-graph {
   height:100px;
   width: auto;
+}*/
+
+.circles {
+  margin:0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .circle {
   border-radius: 50%;
-  border: 20px solid #DCE4EA;
+  border: 14px solid #DCE4EA;
   width: 150px;
   height: 150px;
   text-align: center;
   display: inline-block;
   padding-top: 37px;
-  margin: 30px 1%;
+  margin: 30px 10px;
+/*  margin-right: 10%;*/
 }
 
 .first {
-  border-left-color: blue;
+  border-left-color: #70A5D2;
 }
 
 .second {
-  border-left-color: yellow;
-  border-bottom-color: yellow;
+  border-left-color: #80C16F;
+  border-bottom-color: #80C16F;
 }
 
 .third {
-  border-left-color: red; 
+  border-left-color: #DD5A52; 
 }
 
 .UVA-graph {
   display: inline-block;
-  width: 40%;
+  width: 325px;
   height: auto;
   vertical-align: middle;
   margin: 10px;
-  margin-left: 40px;
+/*  margin-left: 7%;*/
+  border: 1px solid grey;
+/*  justify-self: center;*/
+}
+
+.stat-totals {
+  display: inline;
+  border-radius: 25px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #919091;
+  border-radius: 25px;
+  margin-top: 30px;
+}
+
+hr {
+  color: #919091;
 }
 
 .job-information {
@@ -345,8 +374,78 @@ li {
 .aside-box {
   width: 100%;
   height: 100%;
-  background-color: brown;
+/*  background-color: ;*/
 }
+
+.social-media-box {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.social-media {
+  padding: 17px;
+  width: 100%;
+  height: 53px;
+  margin-bottom: 20px;
+  color: white;
+  border-radius: 4px;
+}
+
+.Facebook {
+  margin-top:;
+  background-color: #4E6FBD;
+}
+
+.Twitter {
+  background-color: #46ABE7;
+}
+
+.LinkedIn {
+  background-color: #327FB7;
+}
+
+.connect {
+  border-bottom: 1px solid grey;
+  padding-top: 20px;
+}
+
+/*.link-job {
+  padding-top: 20px;
+}*/
+
+.resume {
+  border-bottom: none;
+}
+
+h3 {
+  color: #374050;
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.aside-text {
+  color: grey;
+  margin: 10px 0;
+  padding-top: 10px;
+}
+
+.aside-input {
+  line-height: 2;
+  width: 80%;
+  margin-top: 10px;
+
+}
+
+.resume-input {
+  width: 100%;
+}
+
+label {
+  background-color: #65B7BD;
+  color: white;
+  padding: 8px;
+}
+
 
 @media screen and (max-width: 810px) {
  
