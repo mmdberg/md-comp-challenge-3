@@ -12,31 +12,26 @@
 
 }
 
-.main {
-  padding-top: 10px;
-}
-ul li {
-  padding: 10px;
-  font-size: .7em;
-}
-
-li:hover {
-  color:white;
-}
 
 menu {
-/*  display: grid;*/
-/*  grid-column-start: 1 ;
-  grid-column-end: 2;*/
   grid-row-start: 1 ;
   grid-row-end: 6;
   background-color: #374050;
   color: grey;
   height: 100%;
   width: 100%;
-/*  justify-self: start;*/
   padding: 0;
-  padding-left: 5px;
+}
+
+.menu-header {
+  padding: 10px 0 0 5px;
+  font-size: .8em;
+}
+
+.menu-arrow {
+  height: 7px;
+  width: 7px;
+  display: none;
 }
 
 .profile {
@@ -57,6 +52,21 @@ menu {
   display: inline;
 }
 
+ul li {
+  padding: 10px;
+  font-size: .7em;
+
+}
+
+ul li:hover {
+      background-color: black;
+}
+
+li:hover {
+  color:white;
+
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -68,6 +78,10 @@ li {
 .checkmark {
   height: 1em;
   width: auto;
+}
+
+.categories-text {
+  text-transform: none;
 }
 
 .search-bar {
@@ -121,6 +135,10 @@ li {
 .search-input::placeholder {
   color: #ABABAB;
 /*  margin-top: 10px;*/
+}
+
+.grid {
+  border-right: none;
 }
 
 .title-bar {
@@ -192,6 +210,14 @@ li {
   font-size: .7em;
 }
 
+/*.more-info {
+  visibility: hidden;
+}*/
+
+.more-info {
+    display: none;
+  }
+
 .summary {
   font-weight: bold;
   color: black;
@@ -209,7 +235,7 @@ li {
   height: 100%;
 /*  padding-left: 3%;*/
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 60% 40%;
   grid-template-rows: 200px auto;
   justify-items: center;
 }
@@ -288,7 +314,7 @@ hr {
 }
 
 .job-description {
-  border: 1px dashed black;
+  border: .5px solid grey;
   background-color: white;
   grid-row: 1 / 5;
   margin: 20px;
@@ -340,6 +366,7 @@ hr {
   margin-left: 10px;
   font-weight: bold;
   border-bottom: 1px solid grey;
+    font-size: 1.2em;
 }
 
 .article-body {
@@ -349,7 +376,9 @@ hr {
   padding: 20px 0;
   border-bottom: 1px solid grey;
   margin-right: 10px;
+  font-size: 1.2em;
 }
+
 
 .president-image {
   height: 20px;
@@ -358,13 +387,17 @@ hr {
   vertical-align: middle;
 }
 
+.salary {
+  border: none;
+}
+
 .aside {
   grid-row-start: 1 ;
   grid-row-end: 5;
   display: grid;
 /*  grid-column-gap: 40px;*/
 /*  grid-template-rows: 40px 40px 40px 40px;*/
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto auto auto;
 /*  grid-row-gap: 10px;*/
 /*  height: 100%;*/
   margin: 20px;
@@ -392,7 +425,7 @@ hr {
 }
 
 .Facebook {
-  margin-top:;
+/*  margin-top:;*/
   background-color: #4E6FBD;
 }
 
@@ -407,11 +440,12 @@ hr {
 .connect {
   border-bottom: 1px solid grey;
   padding-top: 20px;
+  padding: 25px 0;
 }
 
-/*.link-job {
-  padding-top: 20px;
-}*/
+.link-job {
+  padding-top: 0;
+}
 
 .resume {
   border-bottom: none;
@@ -419,20 +453,21 @@ hr {
 
 h3 {
   color: #374050;
-  font-size: 1em;
+  font-size: 16px;
   margin: 10px 0;
 }
 
 .aside-text {
   color: grey;
-  margin: 10px 0;
+  margin: 6px 0;
   padding-top: 10px;
+  font-size: .8em;
 }
 
 .aside-input {
   line-height: 2;
-  width: 80%;
-  margin-top: 10px;
+  width: 79%;
+  margin-top: 6px;
 
 }
 
@@ -443,15 +478,359 @@ h3 {
 label {
   background-color: #65B7BD;
   color: white;
-  padding: 8px;
+  padding: 8px 4px;
 }
 
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 980px) {
  
   menu {
     background-color: yellow;
   }
 
+  .UVA-graph {
+    width: 270px;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    padding-top: 27px;
+  }
+  .tab {
+    margin-left: 25px;
+  }
+
+  .social-media {
+    padding: 20px;
+  }
+
+  .aside-input {
+    line-height: 1.5;
+/*    width: 79%;*/
+  }
+
+/*  .resume-input {
+  width: 100%;
+}*/
+
+  label {
+    padding: 6px 4px;
+    font-size: .7em;
+    vertical-align: middle;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  .aside-text {
+    font-size: .7em;
+  }
+
+  .social-media {
+    font-size: .8em;
+  }
+}
+
+@media screen and (max-width: 795px) {
+
+  menu {
+    background-color: green;
+  }
+
+  .location {
+    font-size: .8em;
+  }
+
+  .header-circle {
+    margin-right: 3px;
+  }
+
+  .header-button {
+    margin-right: 3px;
+  }
+
+  .tab {
+    margin-left: 7px;
+  }
+
+  .graphics {
+    grid-template-columns: 50% 50%;
+  }
+
+  .circles {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .circle {
+    margin: 5px 10px 0 10px;
+  }
+
+  .third {
+    justify-self: center;
+    grid-column: 1 / 3;
+    margin: -18px;
+  }
+
+  .article-body, .article-key {
+    font-size: 1em;
+  }
+
+  .social-media {
+    font-size: .6em;
+  }
+
+  .aside-input {
+    width: 75%;
+  }
+
+  .resume-input {
+    width: 100%;
+  }
+
+  .aside-box {
+    text-align: center
+  }
+
+  ul li {
+    display: none;
+  }
+
+  .menu-header {
+    font-size: 1em;
+  }
+
+  .menu-arrow {
+    display: inline;
+  }
+
+  .profile {
+    padding: 15px 0;
+  }
+
+  menu {
+    grid-row: 1 / 4;
+  }
+
+  .job-information, .graphics {
+    grid-column: 1 / 3;
+  }
+
+}
+
+
+@media screen and (max-width: 607px) {
+
+  menu {
+    background-color: orange;
+  }
+
+  .user-name, .menu-header {
+    font-size: 14px;
+  }
+
+  .header-button {
+    font-size: 14px;
+    padding: 6px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .header-circle {
+    padding: 6px;
+    width: 32px;
+  }
+
+  .button-icon {
+    height: 11px
+  }
+
+  .UVA-graph {
+    width: 240px;
+    margin-top: 25px;
+  }
+
+  .aside-input {
+    line-height: 2;
+    width: 79%;
+    margin-top: 6px;
+  }
+
+  label {
+    padding: 8px 4px;
+    font-size: 1em;
+  }
+
+  .tab {
+    margin-left: 12px;
+  }
+  
+  .more-info {
+    visibility: visible;
+  }
+
+  .tab {
+    display: inline;
+  }
+
+  .seetab {
+    visibility: hidden;
+    display: inline;
+  }
+
+  .job-information {
+    display: inline;
+  }
+
+  .resume-input {
+    width: 88%;
+  }
+
+  .social-media, h3 {
+    font-size: 1em;
+  }
+  
+  .salary {
+    border-bottom: 1px solid grey;
+  }
+
+}
+
+@media screen and (max-width: 525px) {
+
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 200px 150px 20px auto;
+}
+
+.search-bar {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+/*  width: 100%;*/
+  display: initial;
+}
+
+.search-input {
+    width: 100%;
+}
+
+.search-bar-icon {
+  display: none;
+}
+
+
+menu {
+  background-color: aqua;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  width: 100%;
+}
+
+.profile {
+/*  display: inline-block;*/
+}
+
+.menu-header {
+/*  display: none;*/
+}
+
+
+.title-bar {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 40px;
+  text-align: center;
+}
+
+.job-title {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+.location {
+  margin: 0;
+}
+
+.button-box {
+  margin: 0;
+}
+
+.header-button {
+  display: inline;
+}
+
+.profile-menu {
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+}
+
+.tabs {
+  text-align: center;
+}
+
+.graphics {
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
+  grid-template-columns: 100%;
+  grid-template-rows: 230px 60px 210px 60px;
+}
+
+.circles {
+
+}
+
+.circle-words {
+  grid-row: 2 / 3;
+  margin-top: 10px;
+}
+
+.UVA-graph {
+  grid-row: 3 / 4;
+  width: 300px;
+  margin: 10px ;
+}
+
+.graph-words {
+  grid-row: 4 / 5;
+  margin-top: 10px;
+}
+
+
+.job-description {
+  grid-template-columns: 100%;
+  grid-template-rows: 30px 30px repeat(11, 40px) auto repeat(3, 40px);
+  text-align: center;
+}
+
+.article-key, .article-title, .article-body {
+  display: block;
+  margin: 0;
+  padding: 14px 0 9px 0;
+  width: 100%;
+}
+
+.article-key {
+  border-bottom: 1px dashed grey;
+}
+
+.article-body {
+  border-bottom: 1px solid grey;
+}
+
+.edit-color {
+  padding: 5px;
+  margin-top: 0;
+  height: 80%;
+}
+
+  .aside-box,  {
+    min-width: 210px
+  }
 }
 

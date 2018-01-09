@@ -13,9 +13,9 @@
     <menu>
       <div class="profile">
         <img class="profile-picture" src="Images/UVA_Rotunda.jpg" alt="profile picture">
-        <p>University of Virginia <img class="icon-small" src="Images/down-carrot.svg" alt="down arrow"></p>
+        <p class="user-name">Thomas Jefferson <img class="icon-small" src="Images/down-carrot.svg" alt="down arrow"></p>
       </div>
-      <p class="main">Main</p>
+      <p class="menu-header">Main <img class="menu-arrow" src="Images/down-carrot.svg" alt="down arrow"></p>
       <ul>
         <li><i class="fas fa-home"></i>  Home</li>
         <li><i class="fas fa-briefcase"></i>  Jobs</li>
@@ -23,7 +23,7 @@
         <li><i class="fas fa-thumbtack"></i>  Tasks</li>
         <li><i class="fas fa-calendar-alt"></i>  Calendar</li>
       </ul>
-      <p>Admin</p>
+      <p class="menu-header">Admin <img class="menu-arrow" src="Images/down-carrot.svg" alt="down arrow"></p>
       <ul>
         <li><i class="fas fa-users"></i>  Users</li>
         <li><i class="fas fa-map-marker-alt"></i>  Locations</li>
@@ -31,12 +31,12 @@
         <li><i class="fas fa-book"></i>  Job Boards</li>
         <li><i class="fas fa-retweet"></i>  Social</li>
       </ul>
-      <p>Categories</p>
+      <p class="menu-header">Categories <img class="menu-arrow" src="Images/down-carrot.svg" alt="down arrow"></p>
       <ul>
-        <li><img class="checkmark" src="Images/yellow-checked-button.svg" alt="yellow checkmark">Administrative</li>
-        <li><img class="checkmark" src="Images/blue-checked-button.svg" alt="blue checkmark">Design</li>
-        <li><img class="checkmark" src="Images/red-checked-button.svg" alt="red checkmark">Executive</li>
-        <li><img class="checkmark" src="Images/green-checked-button.svg" alt="green">Human Resources</li>
+        <li class="categories-text"><img class="checkmark" src="Images/yellow-checked-button.svg" alt="yellow checkmark">Administrative</li>
+        <li class="categories-text"><img class="checkmark" src="Images/blue-checked-button.svg" alt="blue checkmark">Design</li>
+        <li class="categories-text"><img class="checkmark" src="Images/red-checked-button.svg" alt="red checkmark">Executive</li>
+        <li class="categories-text"><img class="checkmark" src="Images/green-checked-button.svg" alt="green">Human Resources</li>
       </ul>
     </menu>
     <nav class="search-bar">
@@ -45,49 +45,50 @@
         <input class="search-input" type="text" placeholder="Search for a job or resume">
         <p class="search-bar-icon search-user" ><i class="fas fa-user-plus"></i></p>
         <p class="search-bar-icon" ><i class="fas fa-calendar-alt"></i></p>
-        <p class="search-bar-icon" ><i class="fas fa-th"></i></p>
+        <p class="search-bar-icon grid" ><i class="fas fa-th"></i></p>
     </nav>
     <header class="title-bar">
       <div class="title-box">
-      <p class="job-title">University of Virginia</p>
-      <p class="location"><img class="icon-small" src="Images/you-are-here.svg" alt="here icon"> Charlottesville, VA - <span class="preview-post">preview this post</span></p>
+        <p class="job-title">University of Virginia</p>
+        <p class="location"><img class="icon-small" src="Images/you-are-here.svg" alt="here icon"> Charlottesville, VA - <span class="preview-post">preview this post</span></p>
       </div>
       <div class="button-box">
-      <p  class="inline-block header-button"><img class="icon-small" src="Images/green-circle.svg" alt="Green circle"> OPEN</p>
-      <p class="inline-block header-circle" ><img class=" icon-small" src="Images/flag.svg" alt="flag"></p>
-      <p class="inline-block header-circle" ><img class="icon-small" src="Images/pen.svg" alt="pen"></p>
-      <p class="inline-block header-circle " ><img class="icon-small" src="Images/trash.svg" alt="trash"></p>
+        <p  class="inline-block header-button"><img class="button-icon icon-small" src="Images/green-circle.svg" alt="Green circle"> OPEN</p>
+        <p class="inline-block header-circle" ><img class="button-icon icon-small" src="Images/flag.svg" alt="flag"></p>
+        <p class="inline-block header-circle" ><img class="button-icon icon-small" src="Images/pen.svg" alt="pen"></p>
+        <p class="inline-block header-circle " ><img class="button-icon icon-small" src="Images/trash.svg" alt="trash"></p>
       </div>
     </header>
     <section class="profile-menu">
       <ol class="tabs">
         <li class="tab summary">Summary</li>
-        <li class="tab">Applicants</li>
-        <li class="tab">Job Board</li>
-        <li class="tab">Interviews</li>
-        <li class="tab">Activity</li>
-        <li class="tab">Broadcast</li>
-        <li class="tab">Notifications</li>
+        <li class="tab more-info">More Information <img class="menu-arrow" src="Images/down-carrot.svg" alt="down arrow"></li>
+        <li class="tab seetab">Applicants</li>
+        <li class="tab seetab">Job Board</li>
+        <li class="tab seetab">Interviews</li>
+        <li class="tab seetab">Activity</li>
+        <li class="tab seetab">Broadcast</li>
+        <li class="tab seetab">Notifications</li>
       </ol>
     </section>
     <section class="graphics">
-        <div class="circles">
-          <div class="first circle">
-            <p>2,100</p>
-            <p>Applicants</p>
-          </div>
-          <div class="second circle">
-            <p>2,000</p>
-            <p>Interviews</p>
-          </div>
-          <div class="third circle">
-            <p>3,333</p>
-            <p>Forwards</p>
-          </div>
+      <div class="circles">
+        <div class="first circle">
+          <p>2,100</p>
+          <p>Applicants</p>
         </div>
+        <div class="second circle">
+          <p>2,000</p>
+          <p>Interviews</p>
+        </div>
+        <div class="third circle">
+          <p>3,333</p>
+          <p>Forwards</p>
+        </div>
+      </div>
       <img class="UVA-graph" src="Images/UVA-graph.png" alt="graph of GPA vs ACT/SAT score">
-      <p class="stat-totals">Totals: out of 10,000</p>
-      <p class="stat-totals">GPA vs SAT/ACT Score</p>
+      <p class="stat-totals circle-words">Totals: out of 10,000</p>
+      <p class="stat-totals graph-words">GPA vs SAT/ACT Score</p>
       <hr>
     </section>
     <section class="job-information">
@@ -114,10 +115,10 @@
         <p class="article-body">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulloo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.
         </p>
         <p class="article-key">President</p>
-        <p class="article-body"><img class="president-image" src="Images/T-Sull.jpeg" alt="Picture of President Sullivan">Theresa Sullivan
+        <p class="article-body"><img class="president-image" src="Images/T-Sull.jpeg" alt="Picture of President Sullivan"> Theresa Sullivan
         </p>
-        <p class="article-key">Approved Salary</p>
-        <p class="article-body">$50,000
+        <p class="article-key salary">Approved Salary</p>
+        <p class="article-body salary">$50,000
         </p>
       </article>
       <aside class="aside">
