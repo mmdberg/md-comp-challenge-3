@@ -3,35 +3,156 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Images/normalize.css">
     <link rel="stylesheet" href="style.css">
-    <title>The Office</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Go Hoos</title>
   </head>
-  <body>
+  <body class="container">
     <menu>
-      <p>main</p>
-      <ul>
-        <li>Home</li>
-        <li>Jobs</li>
-        <li>Resumes</li>
-        <li>Tasks</li>
-        <li>Calendar</li>
-      </ul>
-      <p>Admin</p>
-      <ul>
-        <li>Users</li>
-        <li>Locations</li>
-        <li>Workflows</li>
-        <li>Job Boards</li>
-        <li>Social</li>
-      </ul>
-      <p>Categories</p>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <div class="profile">
+        <img class="profile-picture" src="Images/UVA_Rotunda.jpg" alt="profile picture">
+        <p class="user-name">Thomas Jefferson <img class="icon-small" src="Images/down-carrot.svg" alt="down arrow"></p>
+      </div>
+      <div class="main-menu-headers">
+        <p class="menu-header">Main <img class="menu-arrow" src="Images/down-carrot.svg" alt="down arrow"></p>
+        <ul>
+          <li><i class="fas fa-home"></i>  Home</li>
+          <li><i class="fas fa-briefcase"></i>  Jobs</li>
+          <li><i class="fas fa-address-book"></i>  Resumes</li>
+          <li><i class="fas fa-thumbtack"></i>  Tasks</li>
+          <li><i class="fas fa-calendar-alt"></i>  Calendar</li>
+        </ul>
+        <p class="menu-header">Admin <img class="menu-arrow" src="Images/down-carrot.svg" alt="down arrow"></p>
+        <ul>
+          <li><i class="fas fa-users"></i>  Users</li>
+          <li><i class="fas fa-map-marker-alt"></i>  Locations</li>
+          <li><i class="fas fa-code-branch"></i>  Workflows</li>
+          <li><i class="fas fa-book"></i>  Job Boards</li>
+          <li><i class="fas fa-retweet"></i>  Social</li>
+        </ul>
+        <p class="menu-header">Categories <img class="menu-arrow" src="Images/down-carrot.svg" alt="down arrow"></p>
+        <ul class="categories">
+          <li class="categories-text"><img class="checkmark" src="Images/yellow-checked-button.svg" alt="yellow checkmark"> Administrative</li>
+          <li class="blue categories-text">Design</li>
+          <li class="red categories-text">Executive</li>
+          <li class="green categories-text">Human Resources</li>
+        </ul>
+      </div>
     </menu>
-    
+    <nav class="search-bar">
+        <p class="search-bar-icon nav-tab"><img class="left-arrow" src="Images/left-arrow.svg" alt="left arrow"><i class="fas fa-bars"></i></p>
+        <input class="search-input" type="text" placeholder="Search for a job or resume">
+        <p class="search-bar-icon search-user" ><i class="fas fa-user-plus"></i></p>
+        <p class="search-bar-icon" ><i class="fas fa-calendar-alt"></i></p>
+        <p class="search-bar-icon grid" ><i class="fas fa-th"></i></p>
+    </nav>
+    <header class="title-bar">
+      <div class="title-box">
+        <p class="job-title">University of Virginia</p>
+        <p class="location"><img class="icon-small" src="Images/you-are-here.svg" alt="here icon"> Charlottesville, VA - <span class="preview-post">preview this post</span></p>
+      </div>
+      <div class="button-box">
+        <p  class="inline-block header-button"><img class="button-icon icon-small" src="Images/green-circle.svg" alt="Green circle"> OPEN</p>
+        <p class="inline-block header-circle" ><img class="button-icon icon-small" src="Images/flag.svg" alt="flag"></p>
+        <p class="inline-block header-circle" ><img class="button-icon icon-small" src="Images/pen.svg" alt="pen"></p>
+        <p class="inline-block header-circle " ><img class="button-icon icon-small" src="Images/trash.svg" alt="trash"></p>
+      </div>
+    </header>
+    <section class="profile-menu">
+      <ol class="tabs">
+        <li class="tab summary">Summary</li>
+        <li class="tab more-info">More Information <img class="menu-arrow" src="Images/down-carrot.svg" alt="down arrow"></li>
+        <li class="tab seetab">Applicants</li>
+        <li class="tab seetab">Rankings</li>
+        <li class="tab seetab">Interviews</li>
+        <li class="tab seetab">Activity</li>
+        <li class="tab seetab">Broadcast</li>
+        <li class="tab seetab">Notifications</li>
+      </ol>
+    </section>
+    <section class="graphics">
+      <div class="circles">
+        <div class="first circle">
+          <p class="graph-number">15,891</p>
+          <p>Undergrad</p>
+        </div>
+        <div class="second circle">
+          <p class="graph-number">6,500</p>
+          <p>Graduate</p>
+        </div>
+        <div class="third circle">
+          <p class="graph-number">55%</p>
+          <p>Female</p>
+        </div>
+      </div>
+      <img class="UVA-graph" src="Images/UVA-graph.png" alt="graph of GPA vs ACT/SAT score">
+      <p class="stat-totals circle-words">Total Enrollment 23,898</p>
+      <p class="stat-totals graph-words">GPA vs SAT/ACT Score</p>
+    </section>
+    <div class="hr">
+      <hr class="hr1">
+      <img class="hr1 hr-img icon-small" src="Images/up-arrow.svg" alt="up arrow">
+      <hr class="hr1">
+    </div>
+    <section class="job-information">
+      <article class="job-description">
+        <p class="article-title ">College description</p>
+        <p class="edit-box"><span class="edit-color"><i class="fas fa-pencil-alt"></i> EDIT</span>
+        </p>
+        <p class="article-key">Conference</p>
+        <p class="article-body">Atlantic Coast Conference
+        </p>
+        <p class="article-key">location</p>
+        <p class="article-body">
+        Charlottesville, VA</p>
+        <p class="article-key">School Type</p>
+        <p class="article-body">Public, Coed
+        </p>
+        <p class="article-key">Colors</p>
+        <p class="article-body">Orange and Blue
+        </p>
+        <p class="article-key">Mascot</p>
+        <p class="article-body">Cavalier
+        </p>
+        <p class="article-key">Description</p>
+        <p class="article-body">The University of Virginia is distinctive among public institutions of higher education. Founded by Thomas Jefferson in 1819, the University continues in its mission to develop tomorrow’s leaders who are well prepared to help shape the future of the nation and the world. The University is highly selective, accepting only the best students and those who show the exceptional promise Jefferson envisioned.
+
+        The University of Virginia is made up of eleven schools in Charlottesville plus the College at Wise in Southwest Virginia. Not including the College at Wise, the University employs more than 28,000 people, including approximately 16,000 faculty and staff and approximately 7,000 Health System employees.
+
+        For 2018, the University was ranked the No. 3 best public university by U.S. News and World Report. In the 19 years since U.S. News began ranking public universities as a separate category, UVA has ranked in the top three and continues to rank in the Top 30 among the best of all national universities, public and private.
+        </p>
+        <p class="article-key">President</p>
+        <p class="article-body"><img class="president-image" src="Images/T-Sull.jpeg" alt="Picture of President Sullivan"> Theresa Sullivan
+        </p>
+        <p class="article-key salary">Approved Budget</p>
+        <p class="article-body salary">$8.2 Billion
+        </p>
+      </article>
+      <aside class="aside">
+        <section class="aside-box social-media-box">
+          <p class="Facebook social-media"><i class="fab fa-facebook"></i> Post to Facebook</p>
+          <p class="Twitter social-media"><i class="fab fa-twitter"></i> Tweet this Job</p>
+          <p class="LinkedIn social-media"><i class="fab fa-linkedin"></i> Post to LinkedIn</p>
+        </section>
+        <section class="aside-box connect">
+          <h3><i class="fas fa-globe"></i>    Link to this Job</h3>
+          <p class="aside-text">You can automatically link this job to any social media site using the below link.</p>
+          <input type="text" class="aside-input" placeholder="https://www.library.virginia.edu/jobs/"><label for="aside-input">Copy</label>
+        </section>
+        <section class="aside-box connect">
+          <h3><i class="fas fa-tv"></i>    Use the Button Widget</h3>
+          <p class="aside-text">This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
+          <input type="text" class="aside-input" placeholder="<script type=/'text/javascript/' src=/'script.js/'>"><label for="aside-input">Copy</label>
+        </section>
+        <section class="aside-box connect resume">
+          <h3><i class="fas fa-upload"></i>    Upload Resumes by Email</h3>
+          <p class="aside-text">You can automatically upload multiple resumes to this job by emailing the address below.
+          </p>
+          <input type="text" class="aside-input resume-input" placeholder="thomasjefferson@gmail.com"><!-- <label for="aside-input">Copy</label> -->
+        </section>
+      </aside>
+    </section>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   </body>
 </html>
