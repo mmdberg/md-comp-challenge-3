@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Images/normalize.css">
     <link rel="stylesheet" href="style.css">
-
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<!--     <link rel="stylesheet" href="Images/fontawesome.css"> -->
     <title>Go Hoos</title>
   </head>
   <body class="container">
@@ -34,17 +32,16 @@
           <li><i class="fas fa-retweet"></i>  Social</li>
         </ul>
         <p class="menu-header">Categories <img class="menu-arrow" src="Images/down-carrot.svg" alt="down arrow"></p>
-        <ul>
-          <li class="categories-text"><img class="checkmark" src="Images/yellow-checked-button.svg" alt="yellow checkmark">Administrative</li>
-          <li class="categories-text"><img class="checkmark" src="Images/blue-checked-button.svg" alt="blue checkmark">Design</li>
-          <li class="categories-text"><img class="checkmark" src="Images/red-checked-button.svg" alt="red checkmark">Executive</li>
-          <li class="categories-text"><img class="checkmark" src="Images/green-checked-button.svg" alt="green">Human Resources</li>
+        <ul class="categories">
+          <li class="categories-text"><img class="checkmark" src="Images/yellow-checked-button.svg" alt="yellow checkmark"> Administrative</li>
+          <li class="categories-text"><img class="checkmark" src="Images/blue-checked-button.svg" alt="blue checkmark"> Design</li>
+          <li class="categories-text"><img class="checkmark" src="Images/red-checked-button.svg" alt="red checkmark"> Executive</li>
+          <li class="categories-text"><img class="checkmark" src="Images/green-checked-button.svg" alt="green"> Human Resources</li>
         </ul>
       </div>
     </menu>
     <nav class="search-bar">
         <p class="search-bar-icon"><i class="fas fa-bars"></i></p>
-<!--         <img class="search-bar-icon" src="Images/list-button.svg" alt="list icon"> -->
         <input class="search-input" type="text" placeholder="Search for a job or resume">
         <p class="search-bar-icon search-user" ><i class="fas fa-user-plus"></i></p>
         <p class="search-bar-icon" ><i class="fas fa-calendar-alt"></i></p>
@@ -92,8 +89,12 @@
       <img class="UVA-graph" src="Images/UVA-graph.png" alt="graph of GPA vs ACT/SAT score">
       <p class="stat-totals circle-words">Total Enrollment 23,898</p>
       <p class="stat-totals graph-words">GPA vs SAT/ACT Score</p>
-      <hr>
     </section>
+    <div class="hr">
+      <hr class="hr1">
+      <img class="hr1 hr-img icon-small" src="Images/up-arrow.svg" alt="up arrow">
+      <hr class="hr1">
+    </div>
     <section class="job-information">
       <article class="job-description">
         <p class="article-title ">College description</p>
@@ -134,7 +135,7 @@
           <p class="Twitter social-media"><i class="fab fa-twitter"></i> Tweet this Job</p>
           <p class="LinkedIn social-media"><i class="fab fa-linkedin"></i> Post to LinkedIn</p>
         </section>
-        <section class="aside-box connect link-job">
+        <section class="aside-box connect">
           <h3><i class="fas fa-globe"></i>    Link to this Job</h3>
           <p class="aside-text">You can automatically link this job to any social media site using the below link.</p>
           <input type="text" class="aside-input" placeholder=""><label for="aside-input">Copy</label>
